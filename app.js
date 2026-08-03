@@ -29,6 +29,11 @@ app.get("/recipe", (req, res) => {
   res.render("recipe")
 })
 
+// add recipe page
+app.get("/add", (req, res) => {
+  res.render("add")
+})
+
 app.post("/recipe", (req, res) => {
   let body = req.body
   var isHeaderBlank = false
